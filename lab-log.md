@@ -85,13 +85,16 @@ confirmed correct. Issue appears deeper than surface-level VM settings.
 ---
 
 ## Entry 3 — Root Cause Found & Resolution
-**Date:** June 12, 2026
+**Date:** July 2, 2026
 
 ### Research Conducted
-After two days of troubleshooting VM settings without success, shifted
-approach to reading primary documentation sources:
-- Reviewed official UTM documentation
-- Searched GitHub community issues related to Kali + UTM + ARM64
+After two sessions of troubleshooting VM settings without resolution 
+(June 10-11), independently reviewed the official UTM documentation 
+on July 2 to approach the problem from a fresh angle. Also searched 
+GitHub community issues related to Kali + UTM + ARM64.
+
+Identified that UTM's "Other" VM type preset uses a more compatible 
+QEMU configuration for the Kali ARM64 installer than the "Linux" preset.
 
 ### Root Cause Found
 UTM's "Linux" VM type preset applies a specific QEMU machine 
@@ -123,8 +126,8 @@ reading documentation and community-reported issues to identify.
 ---
 
 ## Next Steps
-- [ ] Confirm Kali boots successfully with "Other" VM type
-- [ ] Complete Kali Linux installation
+- [X] Confirm Kali boots successfully with "Other" VM type
+- [X] Complete Kali Linux installation
 - [ ] Create Windows VM as target machine
 - [ ] Configure Host-Only networking between both VMs
 - [ ] Verify connectivity with ping between VMs
