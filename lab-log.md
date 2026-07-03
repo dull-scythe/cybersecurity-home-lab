@@ -125,6 +125,18 @@ reading documentation and community-reported issues to identify.
 
 ---
 
+## Entry 5 — Kali Updated & Lab Operational
+**Date:** July 2, 2026
+
+### What I Did
+- Successfully logged into Kali terminal
+- Resolved password issue independently; thought password was not being entered; learned terminal tracks keystrokes when entering passwords
+- Ran sudo apt update && sudo apt upgrade -y
+- Kali is fully updated and operational
+
+### Status
+✅ Ready to set up Windows target VM
+
 ## Next Steps
 - [X] Confirm Kali boots successfully with "Other" VM type
 - [X] Complete Kali Linux installation
